@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Getting Started Extension's Popup</title>
+    <style>
+     body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+	<script src="js/base64.js"></script>
+    <script src="js/devtools.js"></script>
+  </head>
+  <body>
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button"  >Base64</button>
+  <button class="w3-bar-item w3-button"  >Hex2Dec</button>
+  <button class="w3-bar-item w3-button"  >Other</button>
+</div>
+
+  
+  <div id="divBase64" class="w3-container tab" style="min-width:450px;">
+  <h2>Base64</h2>
+  <p>
+  <div> 
+	<textarea id="txtEncode" cols="40" rows="5" placeholder="Text to be Encode"></textarea>
+  </div>  
+  <div> 
+	<textarea id="txtDecode" cols="40" rows="5" placeholder="Text to be Decode"></textarea>
+  </div>
+  <div >
+  <button id="btnBase64Encode" class="w3-btn w3-white w3-border w3-border-blue w3-round w3-tiny w3-hover-blue">Encode</button>
+  <button  id="btnBase64Decode" class="w3-btn w3-white w3-border w3-border-blue w3-round w3-tiny w3-hover-blue">Decode</button>
+  </div>
+  
+  </p>
+</div>
+
+<div id="divHex2Dec" class="w3-container tab" style="display:none;min-width:450px;">
+  <h2>Hex2Dec</h2>
+  <p>
+  
+	<div> 
+	<textarea id="txtDec" cols="40" rows="5" placeholder="Dec Here"></textarea>
+  </div>  
+  <div> 
+	<textarea id="txtHex" cols="40" rows="5" placeholder="Hex Here"></textarea>
+  </div>
+  <div >
+  <button id="btnDecCon" class="w3-btn w3-white w3-border w3-border-blue w3-round w3-tiny w3-hover-blue">To Hex</button>
+  <button  id="btnHexCon" class="w3-btn w3-white w3-border w3-border-blue w3-round w3-tiny w3-hover-blue">To Dec</button>
+  </div> 
+  </p> 
+</div>
+<div>
+
+</div>
+<div id="divOther" class="w3-container tab" style="display:none;min-width:450px;">
+  <h2>Other</h2>
+  <p></p>
+</div>
+
+  
+  
+  
+
+  </body>
+</html>

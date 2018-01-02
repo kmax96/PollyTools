@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+	"description": "波利幫助你, 解決小小煩惱",
+  "name": "波利工具",
+  "description": "...",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "devtools.html"
+	 /*,"default_title": "Click here!"*/
+  },
+  "icons": {
+	"16": "icon16.png",
+	"32": "icon32.png"
+  },
+  "permissions": [
+    "activeTab",
+	  "tabs",
+"contextMenus",
+    "https://ajax.googleapis.com/"
+  ]
+}
